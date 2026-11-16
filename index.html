@@ -3,93 +3,384 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="AL-FLY OVERSEAS provides overseas recruitment and manpower services. Explore job opportunities and connect with our team in India.">
+<meta name="description" content="AL-FLY OVERSEAS – Overseas recruitment and manpower services for Gulf and international destinations including Saudi Arabia, UAE, Qatar, Oman, Kuwait, West Africa, Maldives and Singapore.">
 <meta name="theme-color" content="#071a33">
-<title>AL-FLY OVERSEAS | Overseas Recruitment & Manpower Services</title>
+<title>AL-FLY OVERSEAS | Global Recruitment & Manpower Services</title>
 <style>
-:root{--navy:#071a33;--navy2:#102b4d;--gold:#c9a45c;--cream:#f7f6f2;--ink:#172334;--muted:#657184;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
-a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #ffffff20}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 0}.brand{font-weight:800;letter-spacing:1.4px;font-size:20px}.brand small{display:block;color:var(--gold);font-size:10px;letter-spacing:2px;font-weight:600}
-nav{display:flex;gap:20px;align-items:center;font-size:13px}nav a:hover{color:var(--gold)}.menu{display:none}
-.hero{background:linear-gradient(120deg,#071a33 0%,#102b4d 68%,#17395c 100%);color:#fff;padding:92px 0 86px;position:relative;overflow:hidden}
-.hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid #c9a45c55;border-radius:50%;right:-120px;top:-150px;box-shadow:0 0 0 35px #c9a45c0c,0 0 0 75px #c9a45c09}
-.eyebrow{color:var(--gold);font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:12px}
-h1{font-size:clamp(38px,6vw,66px);line-height:1.08;max-width:760px;margin:16px 0}.hero p{max-width:650px;color:#e0e7ef;font-size:17px}
-.btn{display:inline-block;padding:13px 21px;border-radius:4px;font-weight:700;font-size:14px;margin:10px 9px 0 0;background:var(--gold);color:var(--navy)}.btn.outline{background:transparent;border:1px solid #ffffff88;color:#fff}
-section{padding:68px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 34px}.section-head h2{font-size:32px;color:var(--navy);margin:8px 0}.section-head p{color:var(--muted);margin:0}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #e6e9ed;border-radius:8px;padding:24px;background:#fff;box-shadow:0 8px 24px #071a3308}.card h3{color:var(--navy);margin:7px 0}.card p{color:var(--muted);font-size:14px;margin:0}.symbol{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#f5efdf;color:#9b762f;font-size:20px}
-.about{background:var(--cream)}.about-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}.about h2{font-size:34px;color:var(--navy);line-height:1.2}.about p{color:var(--muted)}.promise{background:var(--navy);color:#fff;padding:30px;border-radius:8px}.promise strong{color:var(--gold);font-size:20px}.promise li{margin:9px 0;color:#e3e9f0}
-.countries{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.country{background:var(--navy);color:#fff;padding:22px 14px;text-align:center;border-radius:6px;font-weight:700}.country span{display:block;font-size:28px;margin-bottom:6px}
-.steps{background:#f8f9fb}.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-card{background:var(--navy);color:#fff;border-radius:8px;padding:28px}.contact-card h3{color:var(--gold);margin-top:0}.contact-card p{color:#e0e7ef}.contact-card a{color:#fff;text-decoration:underline;text-decoration-color:var(--gold)}.address{padding:18px 0;border-bottom:1px solid #ffffff25}.address:last-child{border:0}
-form{display:grid;gap:12px}.formbox{border:1px solid #e4e8ee;border-radius:8px;padding:28px}.formbox h3{color:var(--navy);margin-top:0}input,select,textarea{width:100%;padding:13px;border:1px solid #d7dde5;border-radius:4px;font:inherit}textarea{min-height:100px;resize:vertical}button{border:0;cursor:pointer;font:inherit}
-footer{background:#041225;color:#d8e0e9;padding:28px 0;text-align:center;font-size:13px}footer strong{color:var(--gold)}
-.note{font-size:12px;color:var(--muted);margin-top:10px}
-@media(max-width:760px){nav{display:none}.menu{display:block;color:#fff}.grid{grid-template-columns:1fr}.about-layout,.contact-layout{grid-template-columns:1fr}.countries{grid-template-columns:repeat(2,1fr)}.hero{padding:68px 0}.nav{padding:13px 0}.brand{font-size:17px}section{padding:52px 0}}
+:root{--navy:#061a33;--navy2:#102d50;--gold:#d0aa61;--cream:#f7f6f2;--ink:#172334;--muted:#647184;--white:#fff;--line:#e6eaf0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:86px}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.wrap{width:min(1160px,92%);margin:auto}
+.topbar{background:#041225;color:#dfe6ef;font-size:12px;padding:7px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{background:rgba(6,26,51,.97);color:#fff;position:sticky;top:0;z-index:50;border-bottom:1px solid #ffffff20;backdrop-filter:blur(12px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 0}
+.brand{font-weight:900;letter-spacing:1.4px;font-size:20px;line-height:1.2}
+.brand small{display:block;color:var(--gold);font-size:10px;letter-spacing:2.5px;font-weight:700;margin-top:5px}
+nav{display:flex;gap:18px;align-items:center;font-size:13px}
+nav a{color:#edf2f8;transition:.2s}
+nav a:hover{color:var(--gold)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.menu-btn{display:none;background:transparent;color:#fff;border:1px solid #ffffff55;border-radius:6px;padding:8px 11px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:5px;font-weight:800;font-size:14px;background:var(--gold);color:var(--navy);border:1px solid var(--gold);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px #0002}
+.btn.outline{background:transparent;border-color:#ffffff88;color:#fff}
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden;min-height:570px}
+.hero-track{display:flex;transition:transform .75s cubic-bezier(.22,.75,.25,1)}
+.hero-slide{flex:0 0 100%;min-height:570px;display:flex;align-items:center;position:relative;overflow:hidden;padding:80px 0;background:linear-gradient(115deg,#061a33 0%,#102d50 65%,#1b4267 100%)}
+.hero-slide:nth-child(2){background:linear-gradient(115deg,#061a33 0%,#17395d 58%,#72572c 145%)}
+.hero-slide:nth-child(3){background:linear-gradient(115deg,#061a33 0%,#12304f 55%,#4d472f 130%)}
+.hero-slide:before{content:"";position:absolute;width:520px;height:520px;border:1px solid #d0aa6155;border-radius:50%;right:-110px;top:-145px;box-shadow:0 0 0 38px #d0aa610c,0 0 0 85px #d0aa6108}
+.hero-slide:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #ffffff18;border-radius:50%;right:16%;bottom:-185px}
+.hero-content{position:relative;z-index:2}
+.eyebrow{color:var(--gold);font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:12px}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.08;max-width:790px;margin:18px 0}
+.hero p{max-width:680px;color:#e0e7ef;font-size:17px}
+.hero-controls{position:absolute;z-index:4;bottom:28px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:10px}
+.dot{width:9px;height:9px;border:0;border-radius:50%;background:#ffffff66;padding:0}
+.dot.active{width:28px;border-radius:20px;background:var(--gold)}
+.hero-arrow{position:absolute;z-index:4;top:50%;transform:translateY(-50%);width:42px;height:42px;border:1px solid #ffffff55;border-radius:50%;background:#061a3377;color:#fff;font-size:22px}
+.hero-arrow.prev{left:18px}.hero-arrow.next{right:18px}
+section{padding:76px 0}
+.section-head{text-align:center;max-width:760px;margin:0 auto 36px}
+.section-head h2{font-size:clamp(28px,4vw,38px);line-height:1.2;color:var(--navy);margin:9px 0}
+.section-head p{color:var(--muted);margin:0}
+.about{background:var(--cream)}
+.about-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}
+.about h2{font-size:clamp(30px,4vw,42px);color:var(--navy);line-height:1.2}
+.about p{color:var(--muted)}
+.promise{background:var(--navy);color:#fff;padding:30px;border-radius:12px;box-shadow:0 18px 45px #071a331c}
+.promise strong{color:var(--gold);font-size:21px}
+.promise li{margin:9px 0;color:#e3e9f0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:10px;padding:25px;background:#fff;box-shadow:0 8px 24px #071a3308;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 32px #071a3315}
+.card h3{color:var(--navy);margin:10px 0 7px}
+.card p{color:var(--muted);font-size:14px;margin:0}
+.symbol{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:#f5efdf;color:#98712d;font-size:22px}
+.license{background:linear-gradient(120deg,#061a33,#102d50);color:#fff}
+.license-panel{max-width:900px;margin:auto;border:1px solid #d0aa6177;border-radius:14px;padding:34px;text-align:center;box-shadow:0 18px 50px #0002}
+.license-panel h2{color:#fff;margin:8px 0}
+.license-no{display:inline-block;background:#d0aa61;color:#061a33;padding:12px 20px;border-radius:6px;font-weight:900;letter-spacing:.5px;margin:12px 0}
+.license-panel p{color:#e0e7ef;margin-bottom:0;font-size:13px}
+.destinations{background:#f8f9fb}
+.destination-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:8px 3px 18px;scrollbar-width:thin}
+.destination{flex:0 0 230px;scroll-snap-align:start;min-height:155px;background:linear-gradient(145deg,#071a33,#17395c);color:#fff;border-radius:12px;padding:23px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 10px 25px #071a3318}
+.destination .flag{font-size:34px}
+.destination strong{font-size:17px}
+.destination small{color:#d7e0eb}
+.slide-tools{display:flex;justify-content:flex-end;gap:9px;margin-bottom:12px}
+.slide-tools button{width:38px;height:38px;border-radius:50%;border:1px solid #cbd3dd;background:#fff;color:var(--navy);font-size:20px}
+.note{font-size:12px;color:var(--muted);margin-top:14px;text-align:center}
+.steps{background:#f8f9fb}
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.contact-card{background:var(--navy);color:#fff;border-radius:12px;padding:28px}
+.contact-card h3{color:var(--gold);margin-top:0}
+.contact-card p{color:#e0e7ef}
+.contact-card a{color:#fff;text-decoration:underline;text-decoration-color:var(--gold)}
+.address{padding:15px 0;border-bottom:1px solid #ffffff25}
+.address:last-child{border:0}
+.address b{color:var(--gold)}
+form{display:grid;gap:12px}
+.formbox{border:1px solid var(--line);border-radius:12px;padding:28px;background:#fff;box-shadow:0 8px 24px #071a3308}
+.formbox h3{color:var(--navy);margin-top:0}
+input,select,textarea{width:100%;padding:13px;border:1px solid #d7dde5;border-radius:5px;font:inherit;background:#fff}
+textarea{min-height:105px;resize:vertical}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.formbox .btn{justify-self:start}
+footer{background:#041225;color:#d8e0e9;padding:35px 0;text-align:center;font-size:13px}
+footer strong{color:var(--gold);font-size:18px}
+.footer-links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:14px 0}
+.footer-links a:hover{color:var(--gold)}
+@media(max-width:900px){nav{gap:11px;font-size:12px}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){
+.topbar .wrap{justify-content:center;text-align:center}
+.nav{padding:12px 0}.brand{font-size:17px}
+.menu-btn{display:block}
+nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--navy);padding:18px 4%;border-top:1px solid #ffffff22;flex-direction:column;align-items:flex-start}
+nav.open{display:flex}
+.nav-actions>.btn{display:none}
+.hero,.hero-slide{min-height:560px}
+.hero-slide{padding:65px 0 80px}
+.hero p{font-size:15px}
+.hero-arrow{width:34px;height:34px;font-size:18px}
+.hero-arrow.prev{left:8px}.hero-arrow.next{right:8px}
+section{padding:56px 0}
+.grid,.about-layout,.contact-layout,.form-grid{grid-template-columns:1fr}
+.destination{flex-basis:205px}
+.license-panel{padding:25px 18px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-track,.destination-track{scroll-behavior:auto;transition:none}*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<header><div class="wrap nav">
+
+<div class="topbar"><div class="wrap">
+<span>Overseas Recruitment & Manpower Services</span>
+<span>WhatsApp: +91 9214871456 | alflyoverseas@gmail.com</span>
+</div></div>
+
+<header>
+<div class="wrap nav">
 <a class="brand" href="#home">AL-FLY OVERSEAS<small>YOUR DREAMS • OUR MISSION</small></a>
-<nav><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#jobs">Job Destinations</a><a href="#contact">Contact</a></nav>
-<a class="btn" style="margin:0" href="#apply">Apply Now</a>
-</div></header>
+<nav id="mainNav">
+<a href="#home">Home</a>
+<a href="#about">About Us</a>
+<a href="#credentials">Credentials</a>
+<a href="#services">Services</a>
+<a href="#destinations">Destinations</a>
+<a href="#apply">Apply</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="nav-actions">
+<a class="btn" href="#apply">Apply Now</a>
+<button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</div>
+</div>
+</header>
+
 <main>
-<section class="hero" id="home"><div class="wrap">
+<section class="hero" id="home">
+<div class="hero-track" id="heroTrack">
+
+<article class="hero-slide"><div class="wrap hero-content">
 <div class="eyebrow">Overseas Recruitment & Manpower Services</div>
 <h1>Connecting Skills<br>With Global Opportunities.</h1>
-<p>AL-FLY OVERSEAS supports candidates and employers with overseas recruitment coordination and manpower services. Connect with our team to discuss job opportunities and recruitment requirements.</p>
-<a class="btn" href="#jobs">Explore Destinations</a><a class="btn outline" href="https://wa.me/919214871456" target="_blank" rel="noopener">Chat on WhatsApp</a>
-</div></section>
-<section id="about" class="about"><div class="wrap about-layout">
-<div><div class="eyebrow">Who We Are</div><h2>Your Dreams • Our Mission</h2>
+<p>AL-FLY OVERSEAS supports candidates, employers and recruitment partners with overseas recruitment coordination and manpower services.</p>
+<a class="btn" href="#destinations">Explore Destinations</a>
+<a class="btn outline" href="https://wa.me/919214871456" target="_blank" rel="noopener">Chat on WhatsApp</a>
+</div></article>
+
+<article class="hero-slide"><div class="wrap hero-content">
+<div class="eyebrow">Gulf & International Markets</div>
+<h1>Recruitment Across<br>Gulf and Global Markets.</h1>
+<p>Explore recruitment destinations including Saudi Arabia, UAE, Qatar, Oman, Kuwait, West Africa, Maldives and Singapore.</p>
+<a class="btn" href="#destinations">View Destinations</a>
+<a class="btn outline" href="#contact">Contact Our Team</a>
+</div></article>
+
+<article class="hero-slide"><div class="wrap hero-content">
+<div class="eyebrow">For Candidates & Employers</div>
+<h1>Your Workforce Journey<br>Starts With A Conversation.</h1>
+<p>Share your recruitment enquiry, candidate profile or manpower requirement with the AL-FLY OVERSEAS team.</p>
+<a class="btn" href="#apply">Candidate Enquiry</a>
+<a class="btn outline" href="#partner">B2B Partner Enquiry</a>
+</div></article>
+
+</div>
+<button class="hero-arrow prev" id="heroPrev" aria-label="Previous slide">‹</button>
+<button class="hero-arrow next" id="heroNext" aria-label="Next slide">›</button>
+<div class="hero-controls" id="heroDots">
+<button class="dot active" aria-label="Slide 1"></button>
+<button class="dot" aria-label="Slide 2"></button>
+<button class="dot" aria-label="Slide 3"></button>
+</div>
+</section>
+
+<section id="about" class="about">
+<div class="wrap about-layout">
+<div>
+<div class="eyebrow">Who We Are</div>
+<h2>Your Dreams • Our Mission</h2>
 <p>AL-FLY OVERSEAS is an India-based overseas recruitment and manpower services agency. We aim to connect suitable candidates with international employment opportunities and help employers reach relevant talent.</p>
-<p>Our team can assist with recruitment enquiries, candidate coordination and information about available opportunities. Candidates should verify job terms, employer details, salary, visa conditions and written agreements before proceeding.</p></div>
-<div class="promise"><strong>AL-FLY OVERSEAS</strong><ul><li>Overseas job opportunity coordination</li><li>Candidate profile collection</li><li>Employer and recruitment partner enquiries</li><li>Communication and application support</li></ul></div>
-</div></section>
-<section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">What We Do</div><h2>Our Services</h2><p>Recruitment support for candidates, employers and business partners.</p></div>
+<p>We coordinate recruitment enquiries, candidate profiles and communication with employers and recruitment partners across Gulf and other international markets.</p>
+<a class="btn" href="#contact">Connect With Us</a>
+</div>
+<div class="promise">
+<strong>AL-FLY OVERSEAS</strong>
+<ul>
+<li>Overseas job opportunity coordination</li>
+<li>Candidate profile collection</li>
+<li>Employer and B2B recruitment partner enquiries</li>
+<li>Interview and trade-test coordination</li>
+<li>Documentation guidance and pre-departure information</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="credentials" class="license">
+<div class="wrap">
+<div class="license-panel">
+<div class="eyebrow">Company Credentials</div>
+<h2>AL-FLY OVERSEAS</h2>
+<div>Associated with <strong>LYNX HR CONSULTANT</strong></div>
+<div class="license-no">Recruiting Agent Licence No.: B-1650/DEL/PER/1000+/5/9978/2022</div>
+<p>Licence information is displayed as provided by the company. Candidates and employers should independently verify current licence status and relevant recruitment details before proceeding.</p>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="wrap">
+<div class="section-head">
+<div class="eyebrow">What We Do</div>
+<h2>Our Recruitment Services</h2>
+<p>Recruitment coordination and manpower support for candidates, employers and business partners.</p>
+</div>
 <div class="grid">
-<div class="card"><div class="symbol">✦</div><h3>Overseas Recruitment</h3><p>Coordination for overseas job requirements across selected international markets.</p></div>
-<div class="card"><div class="symbol">◎</div><h3>Candidate Registration</h3><p>Collecting candidate details and work profiles for relevant job enquiries.</p></div>
+<div class="card"><div class="symbol">✦</div><h3>Overseas Recruitment</h3><p>Coordination for overseas job requirements across Gulf and selected international markets.</p></div>
+<div class="card"><div class="symbol">◎</div><h3>Candidate Registration</h3><p>Collecting candidate details, trade, experience and job preferences for relevant enquiries.</p></div>
 <div class="card"><div class="symbol">◇</div><h3>Employer & B2B Enquiries</h3><p>Connecting with employers and recruitment partners for manpower requirements.</p></div>
-</div></div></section>
-<section id="jobs" class="steps"><div class="wrap"><div class="section-head"><div class="eyebrow">International Opportunities</div><h2>Our Job Destinations</h2><p>Contact us for current vacancies, eligibility and verified job details.</p></div>
-<div class="countries"><div class="country"><span>🇸🇦</span>Saudi Arabia</div><div class="country"><span>🇦🇪</span>United Arab Emirates</div><div class="country"><span>🇶🇦</span>Qatar</div><div class="country"><span>🇴🇲</span>Oman</div></div>
-<p class="note" style="text-align:center">Vacancies change frequently. Please contact our office for current openings. No job or visa is guaranteed by this website.</p>
-</div></section>
-<section id="apply"><div class="wrap"><div class="section-head"><div class="eyebrow">Take The Next Step</div><h2>Candidate Enquiry</h2><p>Share your basic details. The form will open a WhatsApp message to our team.</p></div>
-<div class="formbox"><h3>Register Your Interest</h3>
+<div class="card"><div class="symbol">▣</div><h3>Interview Coordination</h3><p>Coordination support for candidate interviews and employer selection processes.</p></div>
+<div class="card"><div class="symbol">⚒</div><h3>Trade Test Coordination</h3><p>Coordination for skill assessments and trade-test requirements where applicable.</p></div>
+<div class="card"><div class="symbol">➤</div><h3>Documentation Guidance</h3><p>Guidance on recruitment-related documents and pre-departure information.</p></div>
+</div>
+</div>
+</section>
+
+<section id="destinations" class="destinations">
+<div class="wrap">
+<div class="section-head">
+<div class="eyebrow">International Opportunities</div>
+<h2>Our Recruitment Destinations</h2>
+<p>Gulf and other international markets. Contact us for current vacancies and verified job details.</p>
+</div>
+<div class="slide-tools">
+<button type="button" id="destPrev" aria-label="Scroll destinations left">‹</button>
+<button type="button" id="destNext" aria-label="Scroll destinations right">›</button>
+</div>
+<div class="destination-track" id="destinationTrack">
+<div class="destination"><span class="flag">🇸🇦</span><strong>Saudi Arabia</strong><small>Gulf Region</small></div>
+<div class="destination"><span class="flag">🇦🇪</span><strong>United Arab Emirates</strong><small>Gulf Region</small></div>
+<div class="destination"><span class="flag">🇶🇦</span><strong>Qatar</strong><small>Gulf Region</small></div>
+<div class="destination"><span class="flag">🇴🇲</span><strong>Oman</strong><small>Gulf Region</small></div>
+<div class="destination"><span class="flag">🇰🇼</span><strong>Kuwait</strong><small>Gulf Region</small></div>
+<div class="destination"><span class="flag">🌍</span><strong>West Africa</strong><small>Regional projects</small></div>
+<div class="destination"><span class="flag">🇲🇻</span><strong>Maldives</strong><small>International market</small></div>
+<div class="destination"><span class="flag">🇸🇬</span><strong>Singapore</strong><small>International market</small></div>
+</div>
+<p class="note">Destinations shown represent markets handled or explored by the company. Availability of vacancies, employer requirements and recruitment permissions may vary by project and country.</p>
+</div>
+</section>
+
+<section id="apply">
+<div class="wrap">
+<div class="section-head">
+<div class="eyebrow">Take The Next Step</div>
+<h2>Candidate Enquiry</h2>
+<p>Share your basic details. Your enquiry will open as a WhatsApp message to our team.</p>
+</div>
+<div class="formbox">
+<h3>Register Your Interest</h3>
 <form id="candidateForm">
+<div class="form-grid">
 <input id="name" required placeholder="Full Name">
 <input id="phone" required type="tel" placeholder="Mobile Number with Country Code">
+</div>
+<div class="form-grid">
 <input id="trade" placeholder="Trade / Position">
-<select id="country"><option value="">Preferred Country</option><option>Saudi Arabia</option><option>UAE</option><option>Qatar</option><option>Oman</option><option>Other</option></select>
+<select id="country">
+<option value="">Preferred Country</option>
+<option>Saudi Arabia</option>
+<option>United Arab Emirates</option>
+<option>Qatar</option>
+<option>Oman</option>
+<option>Kuwait</option>
+<option>West Africa</option>
+<option>Maldives</option>
+<option>Singapore</option>
+<option>Other</option>
+</select>
+</div>
 <textarea id="experience" placeholder="Work experience and brief message"></textarea>
-<button class="btn" type="submit">Send Enquiry on WhatsApp</button>
-</form><p class="note">By submitting, you choose to send these details to AL-FLY OVERSEAS through WhatsApp. Do not send passport or other sensitive documents until requested through an appropriate channel.</p>
-</div></div></section>
-<section id="contact" class="steps"><div class="wrap"><div class="section-head"><div class="eyebrow">Get In Touch</div><h2>Contact AL-FLY OVERSEAS</h2><p>For candidate, employer and business partner enquiries, contact our team.</p></div>
+<button class="btn" type="submit">Send Candidate Enquiry on WhatsApp</button>
+</form>
+<p class="note">By submitting, you choose to send these details to AL-FLY OVERSEAS through WhatsApp. Do not enter passport numbers or upload sensitive documents in this form.</p>
+</div>
+</div>
+</section>
+
+<section id="partner" class="about">
+<div class="wrap">
+<div class="section-head">
+<div class="eyebrow">Business Collaboration</div>
+<h2>Become Our B2B Recruitment Partner</h2>
+<p>For manpower requirements, employer enquiries and recruitment partnership proposals, share your details with our team.</p>
+</div>
+<div class="formbox">
+<form id="partnerForm">
+<div class="form-grid">
+<input id="partnerName" required placeholder="Name / Company Name">
+<input id="partnerPhone" required type="tel" placeholder="Contact Number">
+</div>
+<div class="form-grid">
+<input id="partnerCountry" placeholder="Country / Location">
+<input id="partnerType" placeholder="Employer / Recruitment Partner">
+</div>
+<textarea id="partnerMessage" placeholder="Manpower requirement or partnership details"></textarea>
+<button class="btn" type="submit">Send B2B Enquiry on WhatsApp</button>
+</form>
+</div>
+</div>
+</section>
+
+<section id="contact" class="steps">
+<div class="wrap">
+<div class="section-head">
+<div class="eyebrow">Get In Touch</div>
+<h2>Contact AL-FLY OVERSEAS</h2>
+<p>For candidate, employer and business partner enquiries, contact our team.</p>
+</div>
 <div class="contact-layout">
-<div class="contact-card"><h3>Contact Details</h3>
-<p><b>WhatsApp / Office:</b> <a href="https://wa.me/919214871456">+91 9214871456</a></p>
+<div class="contact-card">
+<h3>Contact Details</h3>
+<p><b>WhatsApp / Office:</b> <a href="https://wa.me/919214871456" target="_blank" rel="noopener">+91 9214871456</a></p>
 <p><b>Director:</b> <a href="tel:+919152265020">+91 9152265020</a></p>
 <p><b>Email:</b> <a href="mailto:alflyoverseas@gmail.com">alflyoverseas@gmail.com</a></p>
 <p><b>Associated with:</b> LYNX HR CONSULTANT</p>
+<p><b>Website:</b> <a href="https://alflyoverseas-cloud.github.io/AL-FLY-OVERSEAS-/" target="_blank" rel="noopener">Official Website</a></p>
 </div>
-<div class="contact-card"><h3>Our Office Locations</h3>
-<div class="address"><b>Lucknow Office</b><p>Prime City, Bijnor Road,<br>Lucknow, Uttar Pradesh – 226002, India</p></div>
-<div class="address"><b>New Delhi Office</b><p>Escorts Hospital,<br>New Delhi, India</p></div>
-</div></div></div></section>
+<div class="contact-card">
+<h3>Our Office Locations</h3>
+<div class="address">
+<b>Lucknow Office</b>
+<p>Prime City, Bijnor Road,<br>Lucknow, Uttar Pradesh – 226002, India</p>
+</div>
+<div class="address">
+<b>New Delhi Office</b>
+<p>C-6, Near Escorts Hospital,<br>New Delhi – 110025, India</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 </main>
-<footer><div class="wrap"><strong>AL-FLY OVERSEAS</strong><br>YOUR DREAMS • OUR MISSION<br>Overseas Recruitment & Manpower Services<br><br>© <span id="year"></span> AL-FLY OVERSEAS. All rights reserved.</div></footer>
+
+<footer>
+<div class="wrap">
+<strong>AL-FLY OVERSEAS</strong><br>
+YOUR DREAMS • OUR MISSION<br>
+Overseas Recruitment & Manpower Services
+<div class="footer-links">
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#destinations">Destinations</a>
+<a href="#credentials">Credentials</a>
+<a href="#contact">Contact</a>
+</div>
+<div>© <span id="year"></span> AL-FLY OVERSEAS. All rights reserved.</div>
+</div>
+</footer>
+
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
-document.getElementById('candidateForm').addEventListener('submit',function(e){
- e.preventDefault();
- const v=id=>document.getElementById(id).value.trim();
- const msg=`Candidate Enquiry - AL-FLY OVERSEAS%0AName: ${encodeURIComponent(v('name'))}%0AMobile: ${encodeURIComponent(v('phone'))}%0ATrade/Position: ${encodeURIComponent(v('trade'))}%0APreferred Country: ${encodeURIComponent(v('country'))}%0AExperience/Message: ${encodeURIComponent(v('experience'))}`;
- window.open('https://wa.me/919214871456?text='+msg,'_blank','noopener');
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const menuBtn = document.getElementById('menuBtn');
+const mainNav = document.getElementById('mainNav');
+
+menuBtn.addEventListener('click', () => {
+const isOpen = mainNav.classList.toggle('open');
+menuBtn.setAttribute('aria-expanded', String(isOpen));
 });
-</script>
-</body></html>
+
+mainNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+mainNav.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+}));
+
+const heroTrack = document.getElementById('heroTrack');
+cons
