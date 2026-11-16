@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="AL-FLY OVERSEAS – Overseas recruitment and manpower services for Gulf and international destinations including Saudi Arabia, UAE, Qatar, Oman, Kuwait, West Africa, Maldives and Singapore.">
 <meta name="theme-color" content="#071a33">
+<meta property="og:title" content="AL-FLY OVERSEAS | Overseas Recruitment & Manpower Services">
+<meta property="og:description" content="Gulf and international recruitment enquiries, candidate registration and B2B manpower partnerships.">
+<meta property="og:url" content="https://alflyoverseas-cloud.github.io/AL-FLY-OVERSEAS-/">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://alflyoverseas-cloud.github.io/AL-FLY-OVERSEAS-/">
 <title>AL-FLY OVERSEAS | Global Recruitment & Manpower Services</title>
 <style>
 :root{--navy:#061a33;--navy2:#102d50;--gold:#d0aa61;--cream:#f7f6f2;--ink:#172334;--muted:#647184;--white:#fff;--line:#e6eaf0}
@@ -28,6 +34,7 @@ nav a:hover{color:var(--gold)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:5px;font-weight:800;font-size:14px;background:var(--gold);color:var(--navy);border:1px solid var(--gold);transition:transform .2s,box-shadow .2s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px #0002}
 .btn.outline{background:transparent;border-color:#ffffff88;color:#fff}
+.btn.dark-outline{background:transparent;border-color:#b8c3d0;color:var(--navy)}
 .hero{position:relative;background:var(--navy);color:#fff;overflow:hidden;min-height:570px}
 .hero-track{display:flex;transition:transform .75s cubic-bezier(.22,.75,.25,1)}
 .hero-slide{flex:0 0 100%;min-height:570px;display:flex;align-items:center;position:relative;overflow:hidden;padding:80px 0;background:linear-gradient(115deg,#061a33 0%,#102d50 65%,#1b4267 100%)}
@@ -67,6 +74,7 @@ section{padding:76px 0}
 .license-no{display:inline-block;background:#d0aa61;color:#061a33;padding:12px 20px;border-radius:6px;font-weight:900;letter-spacing:.5px;margin:12px 0}
 .license-panel p{color:#e0e7ef;margin-bottom:0;font-size:13px}
 .destinations{background:#f8f9fb}
+.slider-shell{position:relative}
 .destination-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:8px 3px 18px;scrollbar-width:thin}
 .destination{flex:0 0 230px;scroll-snap-align:start;min-height:155px;background:linear-gradient(145deg,#071a33,#17395c);color:#fff;border-radius:12px;padding:23px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 10px 25px #071a3318}
 .destination .flag{font-size:34px}
@@ -97,290 +105,68 @@ footer strong{color:var(--gold);font-size:18px}
 .footer-links a:hover{color:var(--gold)}
 @media(max-width:900px){nav{gap:11px;font-size:12px}.grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){
-.topbar .wrap{justify-content:center;text-align:center}
-.nav{padding:12px 0}.brand{font-size:17px}
-.menu-btn{display:block}
-nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--navy);padding:18px 4%;border-top:1px solid #ffffff22;flex-direction:column;align-items:flex-start}
-nav.open{display:flex}
-.nav-actions>.btn{display:none}
-.hero,.hero-slide{min-height:560px}
-.hero-slide{padding:65px 0 80px}
-.hero p{font-size:15px}
-.hero-arrow{width:34px;height:34px;font-size:18px}
-.hero-arrow.prev{left:8px}.hero-arrow.next{right:8px}
-section{padding:56px 0}
-.grid,.about-layout,.contact-layout,.form-grid{grid-template-columns:1fr}
-.destination{flex-basis:205px}
-.license-panel{padding:25px 18px}
+  .topbar .wrap{justify-content:center;text-align:center}
+  .nav{padding:12px 0}.brand{font-size:17px}
+  .menu-btn{display:block}
+  nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--navy);padding:18px 4%;border-top:1px solid #ffffff22;flex-direction:column;align-items:flex-start}
+  nav.open{display:flex}
+  .nav-actions>.btn{display:none}
+  .hero,.hero-slide{min-height:560px}
+  .hero-slide{padding:65px 0 80px}
+  .hero p{font-size:15px}
+  .hero-arrow{width:34px;height:34px;font-size:18px}.hero-arrow.prev{left:8px}.hero-arrow.next{right:8px}
+  section{padding:56px 0}
+  .grid,.about-layout,.contact-layout,.form-grid{grid-template-columns:1fr}
+  .destination{flex-basis:205px}
+  .license-panel{padding:25px 18px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-track,.destination-track{scroll-behavior:auto;transition:none}*{animation:none!important;transition:none!important}}
+.lang-btn{background:transparent;border:1px solid #d0aa61;color:#fff;border-radius:5px;padding:8px 11px;font-weight:700}
+.social-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.social-link{display:inline-flex;align-items:center;gap:9px;padding:11px 15px;border:1px solid #d0aa61;border-radius:7px;color:#fff;font-weight:700}
+.social-link:hover{background:#d0aa61;color:#061a33}
+.social-link span{font-size:18px}
+.vacancy-empty{border:1px dashed #c8d0da;border-radius:12px;padding:28px;text-align:center;background:#fff}
+.vacancy-empty h3{color:#061a33;margin-top:0}
+.vacancy-empty p{color:#647184}
+.testimonial-note{background:#fff;border:1px solid #e6eaf0;border-radius:12px;padding:25px;text-align:center;color:#647184}
+.map-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.map-card{border:1px solid #e6eaf0;border-radius:12px;padding:25px;background:#fff}
+.map-card h3{color:#061a33;margin-top:0}
+.map-card p{color:#647184}
+.admin-box{max-width:800px;margin:auto;background:#fff;border:1px solid #e6eaf0;border-radius:12px;padding:28px}
+.admin-warning{background:#fff8e9;border:1px solid #ead4a4;padding:14px;border-radius:7px;font-size:13px;margin-bottom:20px;color:#58451f}
+.admin-list{padding-left:20px;color:#44536a}
+@media(max-width:760px){.map-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
-<div class="topbar"><div class="wrap">
-<span>Overseas Recruitment & Manpower Services</span>
-<span>WhatsApp: +91 9214871456 | alflyoverseas@gmail.com</span>
-</div></div>
-
+<div class="topbar"><div class="wrap"><span>Overseas Recruitment & Manpower Services</span><span>WhatsApp: +91 9214871456 | alflyoverseas@gmail.com</span></div></div>
 <header>
-<div class="wrap nav">
-<a class="brand" href="#home">AL-FLY OVERSEAS<small>YOUR DREAMS • OUR MISSION</small></a>
-<nav id="mainNav">
-<a href="#home">Home</a>
-<a href="#about">About Us</a>
-<a href="#credentials">Credentials</a>
-<a href="#services">Services</a>
-<a href="#destinations">Destinations</a>
-<a href="#apply">Apply</a>
-<a href="#contact">Contact</a>
-</nav>
-<div class="nav-actions">
-<a class="btn" href="#apply">Apply Now</a>
-<button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
-</div>
-</div>
+  <div class="wrap nav">
+    <a class="brand" href="#home">AL-FLY OVERSEAS<small>YOUR DREAMS • OUR MISSION</small></a>
+    <nav id="mainNav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#credentials">Credentials</a><a href="#services">Services</a><a href="#destinations">Destinations</a><a href="#vacancies">Vacancies</a><a href="#candidate">Apply</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-btn" id="languageToggle" type="button">हिन्दी</button>
+      <a class="btn" href="https://wa.me/919214871456" target="_blank" rel="noopener">WhatsApp Us</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
 </header>
-
 <main>
-<section class="hero" id="home">
-<div class="hero-track" id="heroTrack">
-
-<article class="hero-slide"><div class="wrap hero-content">
-<div class="eyebrow">Overseas Recruitment & Manpower Services</div>
-<h1>Connecting Skills<br>With Global Opportunities.</h1>
-<p>AL-FLY OVERSEAS supports candidates, employers and recruitment partners with overseas recruitment coordination and manpower services.</p>
-<a class="btn" href="#destinations">Explore Destinations</a>
-<a class="btn outline" href="https://wa.me/919214871456" target="_blank" rel="noopener">Chat on WhatsApp</a>
-</div></article>
-
-<article class="hero-slide"><div class="wrap hero-content">
-<div class="eyebrow">Gulf & International Markets</div>
-<h1>Recruitment Across<br>Gulf and Global Markets.</h1>
-<p>Explore recruitment destinations including Saudi Arabia, UAE, Qatar, Oman, Kuwait, West Africa, Maldives and Singapore.</p>
-<a class="btn" href="#destinations">View Destinations</a>
-<a class="btn outline" href="#contact">Contact Our Team</a>
-</div></article>
-
-<article class="hero-slide"><div class="wrap hero-content">
-<div class="eyebrow">For Candidates & Employers</div>
-<h1>Your Workforce Journey<br>Starts With A Conversation.</h1>
-<p>Share your recruitment enquiry, candidate profile or manpower requirement with the AL-FLY OVERSEAS team.</p>
-<a class="btn" href="#apply">Candidate Enquiry</a>
-<a class="btn outline" href="#partner">B2B Partner Enquiry</a>
-</div></article>
-
-</div>
-<button class="hero-arrow prev" id="heroPrev" aria-label="Previous slide">‹</button>
-<button class="hero-arrow next" id="heroNext" aria-label="Next slide">›</button>
-<div class="hero-controls" id="heroDots">
-<button class="dot active" aria-label="Slide 1"></button>
-<button class="dot" aria-label="Slide 2"></button>
-<button class="dot" aria-label="Slide 3"></button>
-</div>
+<section class="hero" id="home" style="padding:0">
+  <div class="hero-track" id="heroTrack">
+    <div class="hero-slide"><div class="wrap hero-content"><div class="eyebrow">Your Global Career Partner</div><h1>Connecting Talent With Global Opportunities</h1><p>AL-FLY OVERSEAS provides overseas recruitment and manpower support for employers, recruitment partners and candidates across international markets.</p><a class="btn" href="#candidate">Register as Candidate</a> <a class="btn outline" href="#contact">Contact Our Team</a></div></div>
+    <div class="hero-slide"><div class="wrap hero-content"><div class="eyebrow">International Recruitment</div><h1>Building Workforce Connections Across Borders</h1><p>We support recruitment enquiries for Gulf countries and selected international destinations, subject to project requirements and applicable approvals.</p><a class="btn" href="#destinations">Explore Destinations</a></div></div>
+    <div class="hero-slide"><div class="wrap hero-content"><div class="eyebrow">Employers • Candidates • Partners</div><h1>Your Dreams. Our Mission.</h1><p>Connect with AL-FLY OVERSEAS for candidate registration, employer enquiries and B2B recruitment partnerships.</p><a class="btn" href="#partner">Become a B2B Partner</a></div></div>
+  </div>
+  <button class="hero-arrow prev" id="heroPrev" type="button" aria-label="Previous slide">‹</button>
+  <button class="hero-arrow next" id="heroNext" type="button" aria-label="Next slide">›</button>
+  <div class="hero-controls" id="heroDots"><button class="dot active" type="button" aria-label="Slide 1"></button><button class="dot" type="button" aria-label="Slide 2"></button><button class="dot" type="button" aria-label="Slide 3"></button></div>
 </section>
-
-<section id="about" class="about">
-<div class="wrap about-layout">
-<div>
-<div class="eyebrow">Who We Are</div>
-<h2>Your Dreams • Our Mission</h2>
-<p>AL-FLY OVERSEAS is an India-based overseas recruitment and manpower services agency. We aim to connect suitable candidates with international employment opportunities and help employers reach relevant talent.</p>
-<p>We coordinate recruitment enquiries, candidate profiles and communication with employers and recruitment partners across Gulf and other international markets.</p>
-<a class="btn" href="#contact">Connect With Us</a>
-</div>
-<div class="promise">
-<strong>AL-FLY OVERSEAS</strong>
-<ul>
-<li>Overseas job opportunity coordination</li>
-<li>Candidate profile collection</li>
-<li>Employer and B2B recruitment partner enquiries</li>
-<li>Interview and trade-test coordination</li>
-<li>Documentation guidance and pre-departure information</li>
-</ul>
-</div>
-</div>
-</section>
-
-<section id="credentials" class="license">
-<div class="wrap">
-<div class="license-panel">
-<div class="eyebrow">Company Credentials</div>
-<h2>AL-FLY OVERSEAS</h2>
-<div>Associated with <strong>LYNX HR CONSULTANT</strong></div>
-<div class="license-no">Recruiting Agent Licence No.: B-1650/DEL/PER/1000+/5/9978/2022</div>
-<p>Licence information is displayed as provided by the company. Candidates and employers should independently verify current licence status and relevant recruitment details before proceeding.</p>
-</div>
-</div>
-</section>
-
-<section id="services">
-<div class="wrap">
-<div class="section-head">
-<div class="eyebrow">What We Do</div>
-<h2>Our Recruitment Services</h2>
-<p>Recruitment coordination and manpower support for candidates, employers and business partners.</p>
-</div>
-<div class="grid">
-<div class="card"><div class="symbol">✦</div><h3>Overseas Recruitment</h3><p>Coordination for overseas job requirements across Gulf and selected international markets.</p></div>
-<div class="card"><div class="symbol">◎</div><h3>Candidate Registration</h3><p>Collecting candidate details, trade, experience and job preferences for relevant enquiries.</p></div>
-<div class="card"><div class="symbol">◇</div><h3>Employer & B2B Enquiries</h3><p>Connecting with employers and recruitment partners for manpower requirements.</p></div>
-<div class="card"><div class="symbol">▣</div><h3>Interview Coordination</h3><p>Coordination support for candidate interviews and employer selection processes.</p></div>
-<div class="card"><div class="symbol">⚒</div><h3>Trade Test Coordination</h3><p>Coordination for skill assessments and trade-test requirements where applicable.</p></div>
-<div class="card"><div class="symbol">➤</div><h3>Documentation Guidance</h3><p>Guidance on recruitment-related documents and pre-departure information.</p></div>
-</div>
-</div>
-</section>
-
-<section id="destinations" class="destinations">
-<div class="wrap">
-<div class="section-head">
-<div class="eyebrow">International Opportunities</div>
-<h2>Our Recruitment Destinations</h2>
-<p>Gulf and other international markets. Contact us for current vacancies and verified job details.</p>
-</div>
-<div class="slide-tools">
-<button type="button" id="destPrev" aria-label="Scroll destinations left">‹</button>
-<button type="button" id="destNext" aria-label="Scroll destinations right">›</button>
-</div>
-<div class="destination-track" id="destinationTrack">
-<div class="destination"><span class="flag">🇸🇦</span><strong>Saudi Arabia</strong><small>Gulf Region</small></div>
-<div class="destination"><span class="flag">🇦🇪</span><strong>United Arab Emirates</strong><small>Gulf Region</small></div>
-<div class="destination"><span class="flag">🇶🇦</span><strong>Qatar</strong><small>Gulf Region</small></div>
-<div class="destination"><span class="flag">🇴🇲</span><strong>Oman</strong><small>Gulf Region</small></div>
-<div class="destination"><span class="flag">🇰🇼</span><strong>Kuwait</strong><small>Gulf Region</small></div>
-<div class="destination"><span class="flag">🌍</span><strong>West Africa</strong><small>Regional projects</small></div>
-<div class="destination"><span class="flag">🇲🇻</span><strong>Maldives</strong><small>International market</small></div>
-<div class="destination"><span class="flag">🇸🇬</span><strong>Singapore</strong><small>International market</small></div>
-</div>
-<p class="note">Destinations shown represent markets handled or explored by the company. Availability of vacancies, employer requirements and recruitment permissions may vary by project and country.</p>
-</div>
-</section>
-
-<section id="apply">
-<div class="wrap">
-<div class="section-head">
-<div class="eyebrow">Take The Next Step</div>
-<h2>Candidate Enquiry</h2>
-<p>Share your basic details. Your enquiry will open as a WhatsApp message to our team.</p>
-</div>
-<div class="formbox">
-<h3>Register Your Interest</h3>
-<form id="candidateForm">
-<div class="form-grid">
-<input id="name" required placeholder="Full Name">
-<input id="phone" required type="tel" placeholder="Mobile Number with Country Code">
-</div>
-<div class="form-grid">
-<input id="trade" placeholder="Trade / Position">
-<select id="country">
-<option value="">Preferred Country</option>
-<option>Saudi Arabia</option>
-<option>United Arab Emirates</option>
-<option>Qatar</option>
-<option>Oman</option>
-<option>Kuwait</option>
-<option>West Africa</option>
-<option>Maldives</option>
-<option>Singapore</option>
-<option>Other</option>
-</select>
-</div>
-<textarea id="experience" placeholder="Work experience and brief message"></textarea>
-<button class="btn" type="submit">Send Candidate Enquiry on WhatsApp</button>
-</form>
-<p class="note">By submitting, you choose to send these details to AL-FLY OVERSEAS through WhatsApp. Do not enter passport numbers or upload sensitive documents in this form.</p>
-</div>
-</div>
-</section>
-
-<section id="partner" class="about">
-<div class="wrap">
-<div class="section-head">
-<div class="eyebrow">Business Collaboration</div>
-<h2>Become Our B2B Recruitment Partner</h2>
-<p>For manpower requirements, employer enquiries and recruitment partnership proposals, share your details with our team.</p>
-</div>
-<div class="formbox">
-<form id="partnerForm">
-<div class="form-grid">
-<input id="partnerName" required placeholder="Name / Company Name">
-<input id="partnerPhone" required type="tel" placeholder="Contact Number">
-</div>
-<div class="form-grid">
-<input id="partnerCountry" placeholder="Country / Location">
-<input id="partnerType" placeholder="Employer / Recruitment Partner">
-</div>
-<textarea id="partnerMessage" placeholder="Manpower requirement or partnership details"></textarea>
-<button class="btn" type="submit">Send B2B Enquiry on WhatsApp</button>
-</form>
-</div>
-</div>
-</section>
-
-<section id="contact" class="steps">
-<div class="wrap">
-<div class="section-head">
-<div class="eyebrow">Get In Touch</div>
-<h2>Contact AL-FLY OVERSEAS</h2>
-<p>For candidate, employer and business partner enquiries, contact our team.</p>
-</div>
-<div class="contact-layout">
-<div class="contact-card">
-<h3>Contact Details</h3>
-<p><b>WhatsApp / Office:</b> <a href="https://wa.me/919214871456" target="_blank" rel="noopener">+91 9214871456</a></p>
-<p><b>Director:</b> <a href="tel:+919152265020">+91 9152265020</a></p>
-<p><b>Email:</b> <a href="mailto:alflyoverseas@gmail.com">alflyoverseas@gmail.com</a></p>
-<p><b>Associated with:</b> LYNX HR CONSULTANT</p>
-<p><b>Website:</b> <a href="https://alflyoverseas-cloud.github.io/AL-FLY-OVERSEAS-/" target="_blank" rel="noopener">Official Website</a></p>
-</div>
-<div class="contact-card">
-<h3>Our Office Locations</h3>
-<div class="address">
-<b>Lucknow Office</b>
-<p>Prime City, Bijnor Road,<br>Lucknow, Uttar Pradesh – 226002, India</p>
-</div>
-<div class="address">
-<b>New Delhi Office</b>
-<p>C-6, Near Escorts Hospital,<br>New Delhi – 110025, India</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-
-<footer>
-<div class="wrap">
-<strong>AL-FLY OVERSEAS</strong><br>
-YOUR DREAMS • OUR MISSION<br>
-Overseas Recruitment & Manpower Services
-<div class="footer-links">
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#destinations">Destinations</a>
-<a href="#credentials">Credentials</a>
-<a href="#contact">Contact</a>
-</div>
-<div>© <span id="year"></span> AL-FLY OVERSEAS. All rights reserved.</div>
-</div>
-</footer>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-const menuBtn = document.getElementById('menuBtn');
-const mainNav = document.getElementById('mainNav');
-
-menuBtn.addEventListener('click', () => {
-const isOpen = mainNav.classList.toggle('open');
-menuBtn.setAttribute('aria-expanded', String(isOpen));
-});
-
-mainNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-mainNav.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
-}));
-
-const heroTrack = document.getElementById('heroTrack');
-cons
+<section class="about" id="about"><div class="wrap about-layout">
+  <div><div class="eyebrow">About Our Agency</div><h2>AL-FLY OVERSEAS</h2><p><strong>Associated with LYNX HR CONSULTANT</strong></p><p>AL-FLY OVERSEAS is focused on overseas recruitment and manpower services. We aim to connect skilled and experienced candidates with suitable international employment opportunities and support employers with recruitment enquiries.</p><p>Our work is guided by clear communication, candidate support and professional coordination throughout the recruitment process.</p><a class="btn" href="#contact">Talk to Our Team</a></div>
+  <div class="promise"><div class="eyebrow">Our Commitment</div><strong>YOUR DREAMS • OUR MISSION</strong><ul><li>Candidate registration and profile coordination</li><li>Overseas job and employer enquiries</li><li>Recruitment partner coordination</li><li>Clear communication and process guidance</li></ul></div>
+</div></section>
